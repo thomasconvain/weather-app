@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <h1>Météo Radio Chilmark</h1>
-    <div v-if="weatherDataList">
-      <WeatherCard v-for="weatherData in weatherDataList" :key="weatherData.id" :weatherData="weatherData" />
+  <div class="p-8">
+    <div>
+      <h1 class="text-white text-3xl">Météo Radio Chilmark</h1>
+      <div v-if="weatherDataList" class="mt-4 grid md:grid-cols-4 gap-4">
+        <WeatherCard v-for="weatherData in weatherDataList" :key="weatherData.id" :weatherData="weatherData" />
+      </div>
     </div>
   </div>
 </template>
