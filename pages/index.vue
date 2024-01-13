@@ -29,7 +29,7 @@ export default {
       // Obtener el nombre del día de la semana
       dailyForecast.forEach((item) => {
         const date = new Date(item.dt_txt);
-        const daysOfWeek = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+        const daysOfWeek = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
         item.dayOfWeek = daysOfWeek[date.getDay()];
       });
 
