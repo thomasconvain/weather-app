@@ -18,7 +18,7 @@
 export default {
   data() {
     return {
-      cities: ['2996944', '2614626', '6438886', '3871336'],
+      cities: ['6438886', '2996944', '2614626', '3871336'],
       forecastData: {},
       groupWeatherData: null,
     };
